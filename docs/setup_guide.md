@@ -63,7 +63,7 @@ cd rpi-object-detector
 It's best practice to use a virtual environment to manage project dependencies:
 
 ```
-python3 -m venv venv
+python3 -m venv --system-site-package venv
 source venv/bin/activate
 ```
 
