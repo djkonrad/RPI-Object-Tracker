@@ -117,7 +117,7 @@ These scripts demonstrate basic camera functionality and streaming.
         ```
     * **Access:** Open a web browser on another device on the same network and navigate to `http://<Your_Raspberry_Pi_IP_Address>:5000`.
     * **Example Output:**
-        ![Live Stream Demo](./live_stream.gif)
+        ![Live Stream Demo](docs/live_stream.gif)
     * **Exit:** Press `Ctrl+C` in the terminal where the script is running.
 
 * **Capture Sequence (`capture_sequence.py`)**
@@ -140,7 +140,7 @@ These scripts prepare the environment for Machine Learning integration.
         python src/image_preprocessing_pipeline.py
         ```
     * **Example Output:**
-        ![Single Processed Image](./single_image.png)
+        ![Single Processed Image](docs/single_image.png)
     * **Exit:** Press `q` in either display window.
 
 ---
