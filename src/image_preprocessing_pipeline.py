@@ -57,6 +57,6 @@ def main():
         picam2.stop()
         cv2.destroyAllWindows()
         print("Camera released and windows closed.")
-
+ 
 if __name__ == "__main__":
     main()
