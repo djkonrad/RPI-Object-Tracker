@@ -115,7 +115,7 @@ These scripts demonstrate basic camera functionality and streaming.
         ```bash
         python src/headless_camera_stream.py
         ```
-    * **Access:** Open a web browser on another device on the same network and navigate to `http://<Your_Raspberry_Pi_IP_Address>:5000`.
+    * **Access:** Open a web browser on another device on the same network and navigate to `http://<Your_Raspberry_Pi_IP_Address>:3000`.
     * **Example Output:**
         ![Live Stream Demo](docs/live_stream.gif)
     * **Exit:** Press `Ctrl+C` in the terminal where the script is running.
@@ -137,8 +137,9 @@ These scripts prepare the environment for Machine Learning integration.
     * **Requirements:** Raspberry Pi OS Desktop environment, monitor, keyboard, mouse.
     * **Run Command:**
         ```bash
-        python src/image_preprocessing_pipeline.py
+        fastapi dev --host 0.0.0.0 src/single_frame_inference.py
         ```
+    * **Access:** Open a web browser on another device on the same network and navigate to `http://<Your_Raspberry_Pi_IP_Address>:8000/image`.
     * **Example Output:**
         ![Single Processed Image](docs/single_image.png)
     * **Exit:** Press `q` in either display window.
